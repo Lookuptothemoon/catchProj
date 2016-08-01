@@ -1,0 +1,158 @@
+@charset "UTF-8";
+body {
+  text-align: center;
+  background-color: blue; }
+  body .all-content {
+    margin: 0;
+    background-color: red;
+    margin-top: 51px; }
+    body .all-content #myNavbar {
+      background-color: black; }
+    body .all-content .header-image {
+      background: url(img/ny-landscape.jpg);
+      background-size: 100% 100%;
+      height: 625px;
+      position: relative; }
+      body .all-content .header-image .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; }
+        body .all-content .header-image .header-content .header {
+          color: white;
+          font-size: 70px;
+          text-shadow: 2px -5px 3px black; }
+        body .all-content .header-image .header-content p {
+          color: #ffff66;
+          font-size: 20px;
+          text-shadow: 2px -1px 1px black; }
+        @media only screen and (max-width: 800px) {
+          body .all-content .header-image .header-content .header {
+            font-size: 60px; }
+          body .all-content .header-image .header-content p {
+            font-size: 17px; } }
+        @media only screen and (max-width: 680px) {
+          body .all-content .header-image .header-content .header {
+            font-size: 42px; }
+          body .all-content .header-image .header-content p {
+            font-size: 12px; } }
+        @media only screen and (max-width: 480px) {
+          body .all-content .header-image .header-content .header {
+            font-size: 28px; }
+          body .all-content .header-image .header-content p {
+            font-size: 10px; } }
+    body .all-content .content {
+      background-color: white; }
+      body .all-content .content .quote-content {
+        padding: 30px;
+        background-color: white; }
+        body .all-content .content .quote-content blockquote {
+          border-left: 10px solid lightblue;
+          quotes: "“" "”" "‘" "’"; }
+        body .all-content .content .quote-content p:before {
+          color: lightblue;
+          content: open-quote;
+          font-size: 4em;
+          line-height: 0.1em;
+          margin-right: 0.25em;
+          vertical-align: text-bottom; }
+        body .all-content .content .quote-content p:after {
+          color: lightblue;
+          content: close-quote;
+          font-size: 4em;
+          line-height: 0em;
+          margin-right: 0.25em;
+          vertical-align: text-bottom; }
+      body .all-content .content .image-content {
+        background-color: lightyellow; }
+        body .all-content .content .image-content .imageBoard {
+          margin-left: 5%;
+          margin-right: 5%;
+          padding-top: 30px;
+          padding-bottom: 30px; }
+          body .all-content .content .image-content .imageBoard #dlButton input {
+            margin-left: 65%;
+            opacity: .5;
+            width: 50px;
+            height: 50px; }
+          body .all-content .content .image-content .imageBoard #dlButton input:hover {
+            opacity: 1; }
+          body .all-content .content .image-content .imageBoard .row img {
+            opacity: .7;
+            width: 300px;
+            height: 200px; }
+          body .all-content .content .image-content .imageBoard .row img:hover {
+            opacity: 1; }
+          body .all-content .content .image-content .imageBoard .row #top-left {
+            border-top-left-radius: 30px; }
+          body .all-content .content .image-content .imageBoard .row #top-right {
+            border-top-right-radius: 30px; }
+          body .all-content .content .image-content .imageBoard .row #bottom-left {
+            border-bottom-left-radius: 30px; }
+          body .all-content .content .image-content .imageBoard .row #bottom-right {
+            border-bottom-right-radius: 30px; }
+          @media only screen and (max-width: 980px) {
+            body .all-content .content .image-content .imageBoard .row #top-left {
+              border-top-left-radius: 0; }
+            body .all-content .content .image-content .imageBoard .row #top-right {
+              border-top-right-radius: 0; }
+            body .all-content .content .image-content .imageBoard .row #bottom-left {
+              border-bottom-left-radius: 0; }
+            body .all-content .content .image-content .imageBoard .row #bottom-right {
+              border-bottom-right-radius: 0; } }
+      body .all-content .content .border {
+        padding-top: 30px;
+        padding-bottom: 30px; }
+        body .all-content .content .border .text {
+          color: blue;
+          margin-left: 100px;
+          margin-right: 100px;
+          text-align: justify;
+          font-family: Lato;
+          line-height: 2;
+          text-indent: 50px;
+          font-size: 20px; }
+        @media only screen and (max-width: 600px) {
+          body .all-content .content .border .text {
+            font-size: 18px;
+            margin-left: 70px;
+            margin-right: 70px;
+            line-height: 1.9; } }
+        @media only screen and (max-width: 425px) {
+          body .all-content .content .border .text {
+            font-size: 17px;
+            margin-left: 60px;
+            margin-right: 60px;
+            line-height: 1.8; } }
+      body .all-content .content .times-sq-content {
+        background-color: black;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        body .all-content .content .times-sq-content .times-sq {
+          margin-left: 10px;
+          margin-right: 10px; }
+          body .all-content .content .times-sq-content .times-sq h3 {
+            color: yellow; }
+          body .all-content .content .times-sq-content .times-sq #times-sq-img {
+            width: 100%;
+            height: 100%; }
+      body .all-content .content .hidden-lg {
+        background-color: orange;
+        color: yellow; }
+    body .all-content .bottom {
+      background-color: gray;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+      body .all-content .bottom p {
+        font-size: 25px; }
+
+/*
+-webkit-transition: opacity .6s ease-in-out, padding .6s ease-in-out;
+-moz-transition: opacity .6s ease-in-out, padding .6s ease-in-out;
+-ms-transition: opacity .6s ease-in-out, padding .6s ease-in-out;
+-o-transition: opacity .6s ease-in-out, padding .6s ease-in-out;
+transition: opacity .6s ease-in-out, padding .6s ease-in-out;
+*/
+
+/*# sourceMappingURL=bootStyle.css.map */

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--These are additional script links-->
+		<script src="bootfiles/jquery.min.js" type="text/javascript"></script>
+		<script src="bootFiles/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="video.js" type="text/javascript"></script>
+		<title>Video Demo</title>
+	</head>
+	
+	<body>
+		<style>
+			.progressBar {
+			    position: relative;
+			    width: 100%;
+			    height:10px;
+			    background-color: gray;
+			}
+
+			.timeBar {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 0;
+			    height: 100%;
+			    background-color: black;
+			}
+
+			.bufferBar {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 0;
+			    height: 100%;
+			    background-color: orange;
+			}
+		</style>
+
+		<div class="video-content" style="background-color:blue;">
+			<div class="video-container" style="background-color: lightpink;">
+				<!-- Video content -->
+				<video id="vid1" width="560" height="312" poster="img/afg-img/millennials-manual.jpg" controls>
+					<source src="sample-vid.mp4" type="video/mp4">
+					<p> 
+						Your browser does not support HTML5 video.
+					</p>
+				</video>
+				<!-- Video controls -->
+				<div id="video-controls" style="background-color: lightblue">
+					<a href="#" id="play-pause">
+						<img src="https://cdn2.iconfinder.com/data/icons/media-and-navigation-buttons-round/512/Button_3-512.png" id="play-img" width="100" height="100">
+					</a>
+					<div class="progressTime" style="background-color:white;">
+						<div id="current-time">0:00</div><br>
+						<div id="duration-time">0.00</div>
+					</div>
+
+
+
+
+
+
+
+					<div class="progressBar">
+						<div class="timeBar"></div>
+					</div>
+
+
+					<div class="progressBar">
+						<div class="bufferBar"></div>
+					</div>
+
+
+					<a href="#" class="muted" >Mute/Unmute</a>
+					<div class="volumeBar">
+					    <div class="volume"></div>
+					</div>
+
+
+					<div class="control">
+					    <a href="#" class="ff">Fast Forward</a>
+					    <a href="#" class="rw">Rewind</a>
+					    <a href="#" class="sl">Slow Motion</a>
+					</div>
+
+					<a href="#" class="fullScreen">Full Screen</a>
+
+
+
+
+
+
+
+					<input type="range" id="scrub-bar" value="0">
+					<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+					<button type="button" id="full-screen">Full Screen</button>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
