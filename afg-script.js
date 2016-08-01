@@ -84,8 +84,14 @@ Power4.easeOut
 SlowMo.ease
 */
 
-    var quote = $(".quote-content");
-    var tween = TweenMax.to(quote, .5, {x:"-=150", ease:Sine.easeIn});
+
+    //var quote = $(".quote");
+    var quote = CSSRulePlugin.getRule(".quote:before");
+    console.log(quote);
+    var tween = TweenMax.from(quote, 3, {cssRule: {height:50}, ease:Sine.easeIn}, .5);
+
+    //var tween = TweenMax.to(quote, .5, {y:"-=150", ease:Sine.easeIn});
+    //var tween = TweenMax.to(quote, .5, {top:100, backgroundColor:"red"})
     var Scene = new ScrollMagic.Scene({
         triggerElement: ".rockefeller-content"
     })
@@ -97,6 +103,7 @@ SlowMo.ease
         name:quote
     })
     .addTo(controller);
+
 
 
 

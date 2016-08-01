@@ -84,10 +84,11 @@ body {
         body .all-content .content .rockefeller-content .quote-content {
           padding: 25px 20% 25px 20%; }
           body .all-content .content .rockefeller-content .quote-content .quote {
-            border-left: solid lightgray;
+            position: relative;
             text-align: left;
             margin-left: 27%;
-            padding: 20% 0 20% 0;
+            padding-top: 100px;
+            padding-bottom: 120px;
             font-size: 17px; }
             body .all-content .content .rockefeller-content .quote-content .quote p {
               margin-left: 30px;
@@ -95,19 +96,23 @@ body {
             body .all-content .content .rockefeller-content .quote-content .quote cite {
               margin-left: 30px;
               color: lightgray; }
+          body .all-content .content .rockefeller-content .quote-content .quote:before {
+            position: absolute;
+            top: 0;
+            content: " ";
+            height: 300px;
+            border: solid 2px lightgray;
+            border-radius: 3px; }
         body .all-content .content .rockefeller-content .video-container #vid1 {
           border-style: solid;
           border-color: white;
           width: 77%; }
-      body .all-content .content .border {
-        background: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01)), url(img/afg-img/articlebackground.png);
+      body .all-content .content .article {
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(img/afg-img/articlebackground.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 70% 50%;
-        background-color: white;
-        padding-top: 30px;
-        padding-bottom: 37px; }
-        body .all-content .content .border img {
+        background-position: 30% 0; }
+        body .all-content .content .article img {
           width: 100%; }
       body .all-content .content .infographic-content {
         background-color: black; }

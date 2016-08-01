@@ -111,10 +111,12 @@ body {
                     padding: 25px 20% 25px 20%;
                     
                     .quote {
-                        border-left: solid lightgray;
+                        position: relative;
                         text-align: left;
                         margin-left: 27%;
-                        padding: 20% 0 20% 0;
+                        padding-top: 100px;
+                        padding-bottom: 120px;
+                        //padding: 20% 0 20% 0;
                         font-size: 17px;
 
                         p {
@@ -127,6 +129,16 @@ body {
                             color: lightgray;
                         }
                     }
+                
+                    .quote:before {
+                        position: absolute;
+                        top: 0;
+                        content: " ";
+                        height: 300px;
+                        border: solid 2px lightgray;
+                        border-radius: 3px;
+                    }
+                    
                 }
 
                 .video-container {
@@ -141,16 +153,13 @@ body {
                 }
             }
             
-            .border {
+            .article {
                 //background-image
-                background: linear-gradient(rgba(255,255,255,.01), rgba(255,255,255,.01)), url(img/afg-img/articlebackground.png);
+                background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(img/afg-img/articlebackground.png);
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: 70% 50%;
+                background-position: 30% 0;   
                 //end of background-image
-                background-color: white;
-                padding-top: 30px;
-                padding-bottom: 37px;
 
                 img {
                     width: 100%;
