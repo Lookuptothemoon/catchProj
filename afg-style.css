@@ -101,12 +101,14 @@ body {
           width: 77%; }
       body .all-content .content .border {
         background: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01)), url(img/afg-img/articlebackground.png);
-        background-color: white;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 70% 50%;
+        background-color: white;
         padding-top: 30px;
         padding-bottom: 37px; }
+        body .all-content .content .border img {
+          width: 100%; }
       body .all-content .content .infographic-content {
         background-color: black; }
         body .all-content .content .infographic-content .infographic {

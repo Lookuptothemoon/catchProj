@@ -58,8 +58,7 @@ function init() {
         var section = $(this).attr('id');
 
         new ScrollMagic.Scene({
-            triggerElement: this,
-            duration: 200
+            triggerElement: this
         })
         .addIndicators({
             colorStart: "rgba(255,255,255,0.5)",
