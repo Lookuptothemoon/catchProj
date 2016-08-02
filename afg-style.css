@@ -110,15 +110,41 @@ body {
         background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(img/afg-img/articlebackground.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 30% 0; }
+        background-position: 30% 0;
+        padding: 20px 0 20px 0;
+        margin: 0; }
         body .all-content .content .article .text {
           font-family: Gotham Narrow; }
-          body .all-content .content .article .text #top-title {
-            font-size: 50px;
+          body .all-content .content .article .text #title-text {
             font-family: Gotham Narrow Bold; }
+          body .all-content .content .article .text #top-text {
+            font-family: Gotham Narrow Bold;
+            margin-left: 5%; }
           body .all-content .content .article .text p {
             text-align: left;
-            font-size: 14px; }
+            font-size: 18px; }
+        body .all-content .content .article #text-box1 {
+          margin: 0 50% 0 5%; }
+        body .all-content .content .article #text-box2 {
+          position: relative;
+          margin: 0 5% 0 45%; }
+        body .all-content .content .article #text-box3 {
+          position: relative;
+          border: 2px 2px 2px 0;
+          margin: 0 55% 0 0;
+          border-top: 4px solid black;
+          border-right: 4px solid black;
+          border-bottom: 4px solid black; }
+          body .all-content .content .article #text-box3 p {
+            padding-left: 5%; }
+        body .all-content .content .article #text-box4 {
+          position: relative;
+          margin: 15px 5% 15px 5%; }
+        body .all-content .content .article #text-box5 {
+          position: relative;
+          margin: 0 50% 0 5%; }
+        body .all-content .content .article #text-box6 {
+          margin: 0 5% 0 50%; }
       body .all-content .content .infographic-content {
         background-color: black; }
         body .all-content .content .infographic-content .infographic {
