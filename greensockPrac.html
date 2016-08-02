@@ -8,12 +8,12 @@
             <!--- GreenSock javascript links -->
         <script src="gsap/src/minified/TweenMax.min.js" type="text/javascript"></script>
         <script src="gsap/src/minified/plugins/CSSPlugin.min.js" type="text/javascript"></script>
+        <script src="gsap/src/minified/plugins/CSSRulePlugin.min.js" type="text/javascript"></script>
         <script src="gsap/src/minified/easing/EasePack.min.js" type="text/javascript"></script>
         <script src="gsap/src/minified/TweenLite.min.js" type="text/javascript"></script>
-        <script src="gsap/src/minified/utils/Draggable.min.js" type="text/javascript"></script>
             <!-- ScrollMagic javascript links w/ GreenSock plugin -->
-        <script src="scrollmagic/minified/plugins/animation.gsap.min.js" type="text/javascript"></script>
-        <script src="Scrollmagic/minified/ScrollMagic.min.js" type="text/javascript"></script>
+<!--         <script src="scrollmagic/minified/plugins/animation.gsap.min.js" type="text/javascript"></script>
+        <script src="Scrollmagic/minified/ScrollMagic.min.js" type="text/javascript"></script> -->
             <!-- my javascript links -->
         <script src="greenSockScript.js" type="text/javascript"></script>         
         <style>
@@ -68,6 +68,18 @@
                 border-left-width: 10px;
                 border-left-color: red;
             }
+
+            .line {
+                position: relative;
+                text-align: left;
+            }
+            .line:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                height: 300px;
+                border: solid 2px lightgray;
+            }
         </style>
     </head>
      
@@ -92,6 +104,10 @@
 
             <div id="text">
                 <h1>Bounce Around!</h1>
+            </div>
+
+            <div class="line">
+                <p>This is where the before pseudo thing is going to be.</p>
             </div>
         </div>
 

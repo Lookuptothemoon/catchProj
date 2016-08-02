@@ -168,6 +168,9 @@ function init(){
         $("#happy").css("cursor", "default");
     });
 
+    var line = CSSRulePlugin.getRule(".line:before");
+    TweenLite.to(line, 3, {cssRule:{top:100}});
+
 
     /*
     tl_1.to(el, 2, {left:10});

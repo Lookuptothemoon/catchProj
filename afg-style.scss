@@ -2,6 +2,14 @@
     font-family: Summer Hearts;
     src: url(fonts/SummerHearts-Regular.otf);
 }
+@font-face {
+    font-family: Gotham Narrow Bold;
+    src: url(fonts/GothamNarrowBold.otf);
+}
+@font-face {
+    font-family: Gotham Narrow;
+    src: url(fonts/GothamNarrowBook.otf);
+}
 
 body {
     text-align: center;
@@ -110,7 +118,7 @@ body {
                 .quote-content {
                     padding: 25px 20% 25px 20%;
                     
-                    .quote {
+                    .mil-quote {
                         position: relative;
                         text-align: left;
                         margin-left: 27%;
@@ -128,17 +136,7 @@ body {
                             margin-left: 30px;
                             color: lightgray;
                         }
-                    }
-                
-                    .quote:before {
-                        position: absolute;
-                        top: 0;
-                        content: " ";
-                        height: 300px;
-                        border: solid 2px lightgray;
-                        border-radius: 3px;
-                    }
-                    
+                    }                    
                 }
 
                 .video-container {
@@ -154,15 +152,24 @@ body {
             }
             
             .article {
-                //background-image
                 background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(img/afg-img/articlebackground.png);
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: 30% 0;   
-                //end of background-image
+                background-position: 30% 0;
 
-                img {
-                    width: 100%;
+                .text {
+                    font-family: Gotham Narrow;
+
+                    #top-title {
+                        font-size: 50px;
+                        font-family: Gotham Narrow Bold;
+                    }
+
+                    p {
+                        text-align: left;
+                        font-size: 14px;
+
+                    }
                 }
             }
 

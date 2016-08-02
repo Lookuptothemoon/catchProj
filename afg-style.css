@@ -1,6 +1,12 @@
 @font-face {
   font-family: Summer Hearts;
   src: url(fonts/SummerHearts-Regular.otf); }
+@font-face {
+  font-family: Gotham Narrow Bold;
+  src: url(fonts/GothamNarrowBold.otf); }
+@font-face {
+  font-family: Gotham Narrow;
+  src: url(fonts/GothamNarrowBook.otf); }
 body {
   text-align: center;
   background-color: #323232;
@@ -83,26 +89,19 @@ body {
         background-color: black; }
         body .all-content .content .rockefeller-content .quote-content {
           padding: 25px 20% 25px 20%; }
-          body .all-content .content .rockefeller-content .quote-content .quote {
+          body .all-content .content .rockefeller-content .quote-content .mil-quote {
             position: relative;
             text-align: left;
             margin-left: 27%;
             padding-top: 100px;
             padding-bottom: 120px;
             font-size: 17px; }
-            body .all-content .content .rockefeller-content .quote-content .quote p {
+            body .all-content .content .rockefeller-content .quote-content .mil-quote p {
               margin-left: 30px;
               color: lightgray; }
-            body .all-content .content .rockefeller-content .quote-content .quote cite {
+            body .all-content .content .rockefeller-content .quote-content .mil-quote cite {
               margin-left: 30px;
               color: lightgray; }
-          body .all-content .content .rockefeller-content .quote-content .quote:before {
-            position: absolute;
-            top: 0;
-            content: " ";
-            height: 300px;
-            border: solid 2px lightgray;
-            border-radius: 3px; }
         body .all-content .content .rockefeller-content .video-container #vid1 {
           border-style: solid;
           border-color: white;
@@ -112,8 +111,14 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 30% 0; }
-        body .all-content .content .article img {
-          width: 100%; }
+        body .all-content .content .article .text {
+          font-family: Gotham Narrow; }
+          body .all-content .content .article .text #top-title {
+            font-size: 50px;
+            font-family: Gotham Narrow Bold; }
+          body .all-content .content .article .text p {
+            text-align: left;
+            font-size: 14px; }
       body .all-content .content .infographic-content {
         background-color: black; }
         body .all-content .content .infographic-content .infographic {
