@@ -32,54 +32,74 @@
 	            position: absolute;
 	            top: 0;
 	            content: "";
-	            height: 300px;
+	            height: 100%;
 	            border: solid 2px lightgray;
-	            border-radius: 3px;
+	        }
+
+	        .video-container:after {
+	        	position: absolute;
+	        	top: 70%;
+	        	right: 5%;
+	        	-webkit-transform: rotate(90deg);
+	        	-moz-transform: rotate(90deg);
+	        	-o-transform: rotate(90deg);
+	        	-ms-transform: rotate(90deg);
+	        	transform: rotate(90deg);
+	        	content: "VIDEO";
+	        	font-family: Gotham Narrow;
+	        	color: white;
+	        	font-size: 15px;
 	        }
 
 	        #top-text:before {
 	        	content: "";
 	        	display: inline-block;
 	        	background-color: black;
-	        	width: 60%;
-	        	height: 2px;
+	        	width: 70%;
+	        	height: 3px;
 	        }
 
-	        #text-box2:before {
+	        #text-box2 p:before {
+	        	background-color: yellow;
 	        	position: absolute;
-	        	top: 40%;
-	        	left: -40%;
+	        	bottom: 0;
+	        	left: 45%;
+	        	width: 250px;
 	        	-webkit-transform: rotate(270deg);
+	        	-webkit-transform-origin: bottom left;
 	        	-moz-transform: rotate(270deg);
+	        	-moz-transform-origin: bottom left;
 	        	-o-transform: rotate(270deg);
+	        	-o-transform-origin: bottom left;
 	        	-ms-transform: rotate(270deg);
+	        	-ms-transform-origin: bottom left;
 	        	transform: rotate(270deg);
+	        	transform-origin: bottom left;
 	        	content: "HOW DO YOU KNOW, \A IF YOU ARE MILLENNIALS";
 	        	font-family: Gotham Narrow Bold;
 	        	font-size: 20px;
 	        	text-align: left;
 	        	white-space: pre;
 	        }
-	        #text-box2:after {
+	        #text-box2 p:after {
 	        	position: absolute;
 	        	top: 0;
 	        	right: 0;
 	        	content: "";
-	        	display: inline-block;
 	        	background-color: black;
-	        	width: 2px;
-	        	height: 500px;
+	        	width: 3px;
+	        	height: 120%;
 	        }
 
 	        #text-box3:after {
 	        	position: absolute;
-	        	top: -40%;
-	        	right: -30px;
+	        	top: -35%;
+	        	left: 110%;
 	        	content: "";
 	        	display: inline-block;
 	        	background-color: black;
-	        	width: 2px;
-	        	height: 400px;
+	        	width: 3px;
+	        	height: 170%;
 	        }
 
 	        #text-box4:after {
@@ -87,10 +107,10 @@
 	        	content: "";
 	        	display: inline-block;
 	        	background-color: black;
-	        	width: 60%;
-	        	bottom: 15px;
-	        	right: -15%;
-	        	height: 2px;
+	        	right: 0;
+	        	bottom: 25px;
+	        	width: 55%;
+	        	height: 3px;
 	        }
 
 	        #text-box5:before {
@@ -99,7 +119,7 @@
 	        	display: inline-block;
 	        	background-color: black;
 	        	width: 110%;
-	        	height: 2px;
+	        	height: 3px;
 	        	top: -15px;
 	        	left: -15%;
 	        }
@@ -174,7 +194,7 @@
 
 				<section class="article">
 					<div class="text">
-						<p id="top-text" style="font-size: 70px; padding-top:50px;">
+						<p id="top-text" style="font-size: 70px;">
 							<br> WHAT &emsp;&ensp; ARE <br> MILLENNIALS?
 						</p>
 					</div>
@@ -234,10 +254,20 @@
 					</div>
 				</section>
 
+				<section class="quiz-content">
+					<div class="quiz">
+						<a href="https://www.buzzfeed.com/hayeleycromwell/which-millennial-are-you-2i7d5" target="_blank">
+							GO TO QUIZ
+						</a>
+						<img src="img/afg-img/quiz-img.png" id="quiz-image">
+					</div>
+				</section>
+
 			</div> <!--content-->
 
 
-			<section class="bottom">
+<!--
+ 			<section class="bottom">
 				<div class="row">
 					<ul class="footerList">
 						<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
@@ -264,13 +294,14 @@
 				</div>
 
 				<div class="footer-info">
-					<p>This website was proudly made by Luna Ruiz</p>
+					<p>This website was proudly made by the Catch Interns</p>
 					<p>
 						This is a random email that I think does not work:
 						<a href="mailto:someone@example.com">someone@example.com</a>
 					</p>
 				</div>
-			</section>
+			</section> 
+-->
 
 		</div> <!--all-->
 

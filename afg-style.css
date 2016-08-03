@@ -9,7 +9,8 @@
   src: url(fonts/GothamNarrowBook.otf); }
 body {
   text-align: center;
-  background-color: #323232;
+  background-color: white;
+  padding: 0, 0, 10px, 0;
   margin: 0 auto; }
   body .all-content {
     margin: 0;
@@ -81,31 +82,54 @@ body {
           width: 25%;
           height: 25%; }
     body .all-content .content {
-      background-color: white; }
+      background-color: white;
+      /*
+      .header-image {
+          background: linear-gradient(rgba(133,22,40,0.46), rgba(133,22,40,0.46)), url(img/afg-img/millennials-manual.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          //background-size: 100% auto;
+      
+          .header-content {
+              margin: 0 auto;
+              padding-top: 7%;
+              width: 50%;
+      
+              p {
+                  color: white;
+                  font-family: Summer Hearts;
+                  //text-shadow: 5px -5px 5px rgb(65,6,24); //x-coordinate y-coordinate blur color}
+              img {
+                  width: 25%;
+                  height: 25%;}}}
+      */ }
       body .all-content .content .rockefeller-content {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/afg-img/rockefeller-center.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-color: black; }
         body .all-content .content .rockefeller-content .quote-content {
-          padding: 25px 20% 25px 20%; }
+          padding: 30px 20% 20px 20%; }
           body .all-content .content .rockefeller-content .quote-content .mil-quote {
             position: relative;
             text-align: left;
             margin-left: 27%;
             padding-top: 100px;
-            padding-bottom: 120px;
+            padding-bottom: 100px;
             font-size: 17px; }
             body .all-content .content .rockefeller-content .quote-content .mil-quote p {
               margin-left: 30px;
               color: lightgray; }
             body .all-content .content .rockefeller-content .quote-content .mil-quote cite {
               margin-left: 30px;
-              color: lightgray; }
-        body .all-content .content .rockefeller-content .video-container #vid1 {
-          border-style: solid;
-          border-color: white;
-          width: 77%; }
+              color: lightgray;
+              font-size: 15px; }
+        body .all-content .content .rockefeller-content .video-container {
+          position: relative; }
+          body .all-content .content .rockefeller-content .video-container #vid1 {
+            border-style: solid;
+            border-color: white;
+            width: 77%; }
       body .all-content .content .article {
         background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(img/afg-img/articlebackground.png);
         background-repeat: no-repeat;
@@ -119,17 +143,20 @@ body {
             font-family: Gotham Narrow Bold; }
           body .all-content .content .article .text #top-text {
             font-family: Gotham Narrow Bold;
+            padding: 0;
+            margin: 0;
             margin-left: 5%; }
           body .all-content .content .article .text p {
+            background-color: red;
             text-align: left;
             font-size: 18px; }
         body .all-content .content .article #text-box1 {
           margin: 0 50% 0 5%; }
         body .all-content .content .article #text-box2 {
+          background-color: blue;
           position: relative;
-          margin: 0 5% 0 45%;
-          padding-right: 2%;
-          padding-bottom: 200px; }
+          padding: 0 5% 0 45%;
+          margin: 50px 5% 200px 0; }
         body .all-content .content .article #text-box3 {
           position: relative;
           border: 2px 2px 2px 0;
@@ -140,9 +167,9 @@ body {
           body .all-content .content .article #text-box3 p {
             padding-left: 5%; }
         body .all-content .content .article #text-box4 {
+          background-color: blue;
           position: relative;
-          padding-top: 150px;
-          margin: 15px 10% 15px 5%; }
+          padding: 100px 10% 15px 5%; }
         body .all-content .content .article #text-box5 {
           position: relative;
           margin: 0 50% 0 5%; }
@@ -153,8 +180,20 @@ body {
         body .all-content .content .infographic-content .infographic {
           margin: 0 auto; }
           body .all-content .content .infographic-content .infographic #info-img {
-            width: 100%;
-            height: 100%; }
+            width: 100%; }
+      body .all-content .content .quiz-content {
+        background: url(img/afg-img/bba-city-background.jpg);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        position: relative; }
+        body .all-content .content .quiz-content .quiz {
+          position: absolute;
+          bottom: 0; }
+          body .all-content .content .quiz-content .quiz a {
+            font-size: 50px; }
+          body .all-content .content .quiz-content .quiz #quiz-image {
+            width: 100%; }
     body .all-content .bottom {
       background-color: #410618;
       padding-top: 20px;

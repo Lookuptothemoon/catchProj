@@ -15,8 +15,7 @@ function init() {
     var topwidth = $(".header-image").css("width")
     var change = topWidth/headerWidth; //checks how much width value of width changed
     $(".header-image").height(headerHeight*change) //approximately resizes top-image height
-
-
+    // header text size
     $(".header-content > p").css("font-size", topWidth/10);
 
 
@@ -34,6 +33,20 @@ function init() {
 
 
 
+    var headerHeight = 1270; //quiz image original height
+    var headerWidth = 1912; //quiz bckgrd image original width
+
+    var topWidth = $(".quiz-content").width();
+    var topwidth = $(".quiz-content").css("width")
+    console.log("Top Width: " + topWidth);
+    console.log("Css Width: " + topwidth);
+    var change = topWidth/headerWidth; //checks how much width value of width changed
+    var propHeight = headerHeight*change
+    $(".quiz-content").height(propHeight) //approximately resizes top-image height
+
+
+
+    //mouse to inform scrolling
     $(window).bind('scroll', function() {
         mouse = $(".scroll-content");
         if ($(window).scrollTop() > 150) {
@@ -43,9 +56,6 @@ function init() {
             mouse.show();    //get rid of this if you do not want to show anymore
         }
     });
-
-
-
     
     //ScrollMagic Stuff
     var controller = new ScrollMagic.Controller({
@@ -72,16 +82,15 @@ function init() {
 
 
 /*
-Tweens
-
-Elastic.easeIn
-Elastic.easeInout
-Back.easeOut
-Power1.easeOut
-Power2.easeOut
-Power3.easeOut
-Power4.easeOut
-SlowMo.ease
+Tweens --> 
+    Elastic.easeIn
+    Elastic.easeInout
+    Back.easeOut
+    Power1.easeOut
+    Power2.easeOut
+    Power3.easeOut
+    Power4.easeOut
+    SlowMo.ease
 */
 
     var line = CSSRulePlugin.getRule(".mil-quote:before");
@@ -98,15 +107,6 @@ SlowMo.ease
         name:line
     })
     .addTo(controller);
-
-
-
-
-
-
-
-
-
 
 }
 

@@ -13,8 +13,10 @@
 
 body {
     text-align: center;
-    background-color: #323232;
-    //max-width: 1200px;
+    background-color: white;
+    // max-width: 1000px;
+    // min-height: 800px;
+    padding: 0, 0, 10px, 0;
     margin: 0 auto; 
 
     .all-content {
@@ -116,15 +118,14 @@ body {
                 background-color: black;
 
                 .quote-content {
-                    padding: 25px 20% 25px 20%;
+                    padding: 30px 20% 20px 20%;
                     
                     .mil-quote {
                         position: relative;
                         text-align: left;
                         margin-left: 27%;
                         padding-top: 100px;
-                        padding-bottom: 120px;
-                        //padding: 20% 0 20% 0;
+                        padding-bottom: 100px;
                         font-size: 17px;
 
                         p {
@@ -135,12 +136,13 @@ body {
                         cite {
                             margin-left: 30px;
                             color: lightgray;
+                            font-size: 15px;
                         }
                     }                    
                 }
 
                 .video-container {
-                    //padding: 0 10% 5% 10%; //top right bottom left
+                    position: relative;
 
                     #vid1 {
                         border-style: solid;
@@ -167,10 +169,13 @@ body {
                     }
                     #top-text {
                         font-family: Gotham Narrow Bold;
+                        padding: 0;
+                        margin: 0;
                         margin-left: 5%;
                     }
 
                     p {
+                        background-color: red;
                         text-align: left;
                         font-size: 18px;
                     }
@@ -181,10 +186,10 @@ body {
                 }
 
                 #text-box2 {
+                    background-color: blue;
                     position: relative;
-                    margin: 0 5% 0 45%;
-                    padding-right: 2%;
-                    padding-bottom: 200px;
+                    padding: 0 5% 0 45%;
+                    margin: 50px 5% 200px 0;
                 }
 
                 #text-box3 {
@@ -201,9 +206,9 @@ body {
                 }
 
                 #text-box4 {
+                    background-color: blue;
                     position: relative;
-                    padding-top: 150px;
-                    margin: 15px 10% 15px 5%;
+                    padding: 100px 10% 15px 5%;
                 }
 
                 #text-box5 {
@@ -225,11 +230,51 @@ body {
 
                     #info-img {
                         width: 100%;
-                        height: 100%;
                     }
                 }
             }
 
+/*
+.header-image {
+    background: linear-gradient(rgba(133,22,40,0.46), rgba(133,22,40,0.46)), url(img/afg-img/millennials-manual.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    //background-size: 100% auto;
+
+    .header-content {
+        margin: 0 auto;
+        padding-top: 7%;
+        width: 50%;
+
+        p {
+            color: white;
+            font-family: Summer Hearts;
+            //text-shadow: 5px -5px 5px rgb(65,6,24); //x-coordinate y-coordinate blur color}
+        img {
+            width: 25%;
+            height: 25%;}}}
+*/
+
+            .quiz-content {
+                background: url(img/afg-img/bba-city-background.jpg);
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                position: relative;
+
+                .quiz {
+                    position: absolute;
+                    bottom: 0;
+
+                    a {
+                        font-size: 50px;
+                    }
+
+                    #quiz-image {
+                        width: 100%;
+                    }
+                }
+            }
         }
 
 
