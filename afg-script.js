@@ -118,8 +118,7 @@ Tweens -->
 
     //article title
     var line = CSSRulePlugin.getRule("#top-text:before");
-    // var tween = TweenMax.from(line, .5, {cssRule:{width:"60%"}});
-    var tween = TweenMax.to(line, 1, {cssRule:{x:"+=50"}, visibility:"hidden"});
+    var tween = TweenMax.from(line, .5, {cssRule:{width:"90%"}});
 
     var Scene = new ScrollMagic.Scene({
         triggerElement: "#top-text"
@@ -143,6 +142,46 @@ Tweens -->
 
     var Scene = new ScrollMagic.Scene({
         triggerElement: "#text-box2"
+    })
+    .setTween(tween)
+    .addTo(controller);
+
+    //text-box3 after
+    var line = CSSRulePlugin.getRule("#text-box3:after");
+    var tween = TweenMax.from(line, 2, {cssRule:{left:"130%"}});
+
+    var Scene = new ScrollMagic.Scene({
+        triggerElement: "#text-box3"
+    })
+    .setTween(tween)
+    .addTo(controller);
+
+    //text-box3
+    var quiz = $("#text-box3");
+    var tween = TweenMax.to(quiz, 1, {paddingLeft:"5%", ease:Power2.easeOut});
+
+    var Scene = new ScrollMagic.Scene({
+        triggerElement: "#text-box3"
+    })
+    .setTween(tween)
+    .addTo(controller);
+
+    //text-box4
+    var line = CSSRulePlugin.getRule("#text-box4:after");
+    var tween = TweenMax.from(line, 2, {cssRule:{width:"40%"}});
+
+    var Scene = new ScrollMagic.Scene({
+        triggerElement: "#text-box4"
+    })
+    .setTween(tween)
+    .addTo(controller);
+
+    //special-text after
+    var line = CSSRulePlugin.getRule("#special-text:after");
+    var tween = TweenMax.from(line, 2, {cssRule:{width:"65%"}});
+
+    var Scene = new ScrollMagic.Scene({
+        triggerElement: "#special-text"
     })
     .setTween(tween)
     .addTo(controller);

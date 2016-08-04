@@ -90,8 +90,8 @@ body {
       body .all-content .content .article {
         background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(img/afg-img/articlebackground.png);
         background-repeat: no-repeat;
-        background-size: 125%;
-        background-position: 0 -100px;
+        background-size: 150%;
+        background-position: -100px 0;
         padding: 20px 0 0 0;
         margin: 0; }
         body .all-content .content .article .text {
