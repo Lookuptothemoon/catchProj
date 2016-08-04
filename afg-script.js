@@ -72,12 +72,12 @@ function init() {
         new ScrollMagic.Scene({
             triggerElement: this
         })
-        .addIndicators({
-            colorStart: "rgba(255,255,255,0.5)",
-            colorEnd: "rgba(255,255,255,0.5)", 
-            colorTrigger: "rgba(0,255,255,1)",
-            name:section
-        })
+        // .addIndicators({
+        //     colorStart: "rgba(255,255,255,0.5)",
+        //     colorEnd: "rgba(255,255,255,0.5)", 
+        //     colorTrigger: "rgba(0,255,255,1)",
+        //     name:section
+        // })
         .addTo(controller);
     });
 
