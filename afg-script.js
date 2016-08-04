@@ -106,12 +106,22 @@ Tweens -->
     .setTween(tween)
     .addTo(controller);
 
-    //video lines
+    //video line
     var line = CSSRulePlugin.getRule(".video-container:before");
     var tween = TweenMax.from(line, .5, {cssRule:{top:-30}});
 
     var Scene = new ScrollMagic.Scene({
         triggerElement: ".video-container"
+    })
+    .setTween(tween)
+    .addTo(controller);
+
+    //article title
+    var line = CSSRulePlugin.getRule("#top-text:before");
+    var tween = TweenMax.from(line, .5, {cssRule:{width:"60%"}});
+
+    var Scene = new ScrollMagic.Scene({
+        triggerElement: "#top-text"
     })
     .setTween(tween)
     .addTo(controller);
