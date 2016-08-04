@@ -22,7 +22,8 @@ body {
     body .all-content .header-image {
       background: linear-gradient(rgba(133, 22, 40, 0.46), rgba(133, 22, 40, 0.46)), url(img/afg-img/millennials-manual.jpg);
       background-repeat: no-repeat;
-      background-size: 100% auto; }
+      background-size: 100% auto;
+      position: relative; }
       body .all-content .header-image .header-content {
         margin: 0 auto;
         padding-top: 5%;
@@ -34,10 +35,12 @@ body {
         body .all-content .header-image .header-content #catch-logo {
           width: 25%;
           height: 25%; }
-        body .all-content .header-image .header-content #scroll {
-          margin: 0 auto;
-          width: 50px;
-          height: 70px; }
+      body .all-content .header-image #scroll {
+        position: absolute;
+        bottom: 3%;
+        right: 3%;
+        width: 50px;
+        height: 70px; }
     body .all-content .content {
       background-color: white;
       /*
