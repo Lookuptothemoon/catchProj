@@ -57,7 +57,9 @@ function init() {
         }
     });
     
-    //ScrollMagic Stuff
+
+    /*--------------------------------------------ScrollMagic Stuff--------------------------------------------*/
+    //controller
     var controller = new ScrollMagic.Controller({
         globalSceneOptions: {
             triggerHook: 'onCenter'
@@ -81,6 +83,8 @@ function init() {
 
 
 
+
+
 /*
 Tweens --> 
     Elastic.easeIn
@@ -92,50 +96,39 @@ Tweens -->
     Power4.easeOut
     SlowMo.ease
 */
-
+    //top quote line
     var line = CSSRulePlugin.getRule(".mil-quote:before");
-    var tween = TweenMax.to(line, .5, {cssRule:{top:-50}});
+    var tween = TweenMax.from(line, .5, {cssRule:{top:-30}});
 
     var Scene = new ScrollMagic.Scene({
         triggerElement: ".rockefeller-content"
     })
     .setTween(tween)
-    .addIndicators({
-        colorStart: "rgba(255,255,255,0.5)",
-        colorEnd: "rgba(255,255,255,0.5)", 
-        colorTrigger: "rgba(255,255,255,1)",
-        name:line
+    .addTo(controller);
+
+    //video lines
+    var line = CSSRulePlugin.getRule(".video-container:before");
+    var tween = TweenMax.from(line, .5, {cssRule:{top:-30}});
+
+    var Scene = new ScrollMagic.Scene({
+        triggerElement: ".video-container"
     })
+    .setTween(tween)
+    .addTo(controller);
+
+    //quiz image
+    var quiz = $("#quiz-image");
+    var quizWidth = $(".quiz-content").width();
+    var tween = TweenMax.to(quiz, 1, {width:quizWidth, ease:Power2.easeOut});
+
+    var Scene = new ScrollMagic.Scene({
+        triggerElement: ".quiz-content"
+    })
+    .setTween(tween)
     .addTo(controller);
 
 }
 
-
-
-function jqUpdateSize() {
-    var width = $(window).width();
-    var height = $(window).height();
-
-    $('#jqWidth').html(width);
-    $('#jqHeight').html(height);
-
-
-    var headerHeight = 966; //header bckgrd image original height
-    var headerWidth = 2000; //header bckgrd image original width
-
-    var topWidth = $(".header-image").width();
-    var topwidth = $(".header-image").css("width")
-    console.log("Top Width: " + topWidth);
-    console.log("Css Width: " + topwidth);
-    var change = topWidth/headerWidth; //checks how much width value of width changed
-    $(".header-image").height(headerHeight*change) //approximately resizes top-image height
-
-    $(".header-content > p").css("font-size", topWidth/10);
-
-    console.log("Width: " + width);
-    console.log("Height " + height);
-
-};
 $(window).ready(init);
 $(window).resize(init);
 

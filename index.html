@@ -38,17 +38,31 @@
 
 	        .video-container:after {
 	        	position: absolute;
-	        	top: 70%;
-	        	right: 5%;
+	        	bottom: 15%;
+	        	right: 10%;
 	        	-webkit-transform: rotate(90deg);
+	        	-webkit-transform-origin: bottom right;
 	        	-moz-transform: rotate(90deg);
+	        	-moz-transform-origin: bottom right;
 	        	-o-transform: rotate(90deg);
+	        	-o-transform-origin: bottom right;
 	        	-ms-transform: rotate(90deg);
+	        	-ms-transform-origin: bottom right;
 	        	transform: rotate(90deg);
 	        	content: "VIDEO";
-	        	font-family: Gotham Narrow;
+	        	font-family: Gotham Narrow Bold;
 	        	color: white;
-	        	font-size: 15px;
+	        	font-size: 25px;
+	        }
+	        .video-container:before {
+	            position: absolute;
+	            top: 10%;
+	            right: 8.3%;
+	            content: "";
+	            height: 50%;
+	            display: inline-block;
+	            background-color: lightgray;
+	            width: 2px;
 	        }
 
 	        #top-text:before {
@@ -169,7 +183,7 @@
 			<section class="header-image">
 
 				<div class="header-content">
-					<p>A Filtered Generation</p>
+					<p id="header-title">A Filtered Generation</p>
 					<img src="img/afg-img/catch-logo.png" id="catch-logo"> <br>
 					<img src="img/afg-img/scroll-img.gif" id="scroll">
 				</div>

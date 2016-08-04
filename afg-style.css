@@ -10,7 +10,7 @@
 body {
   text-align: center;
   background-color: white;
-  max-width: 1000px;
+  max-width: 1300px;
   min-width: 770px;
   padding: 0, 0, 10px, 0;
   margin: 0 auto; }
@@ -90,8 +90,8 @@ body {
       body .all-content .content .article {
         background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(img/afg-img/articlebackground.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 30% 0;
+        background-size: 125%;
+        background-position: 0 -100px;
         padding: 20px 0 0 0;
         margin: 0; }
         body .all-content .content .article .text {
@@ -113,6 +113,7 @@ body {
           padding: 0 5% 0 45%;
           margin: 50px 5% 200px 0; }
         body .all-content .content .article #text-box3 {
+          position: relative;
           border: 2px 2px 2px 0;
           margin: 0 55% 0 0;
           border-top: 4px solid black;
@@ -149,7 +150,7 @@ body {
           body .all-content .content .quiz-content .quiz a {
             font-size: 50px; }
           body .all-content .content .quiz-content .quiz #quiz-image {
-            width: 100%; }
+            width: 90%; }
     body .all-content .bottom {
       background-color: #410618;
       padding-top: 20px;
