@@ -48,7 +48,7 @@ function init() {
 
     //mouse to inform scrolling
     $(window).bind('scroll', function() {
-        mouse = $(".scroll-content");
+        mouse = $("#scroll");
         if ($(window).scrollTop() > 150) {
             mouse.hide();
         }
@@ -73,7 +73,7 @@ function init() {
         .addIndicators({
             colorStart: "rgba(255,255,255,0.5)",
             colorEnd: "rgba(255,255,255,0.5)", 
-            colorTrigger: "rgba(255,255,255,1)",
+            colorTrigger: "rgba(0,255,255,1)",
             name:section
         })
         .addTo(controller);
