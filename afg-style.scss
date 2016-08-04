@@ -214,13 +214,28 @@ body {
                 margin: 0 auto;
                 position: relative;
 
+                .quiz-link {
+                    background-color: white;
+                    position: absolute;
+                    right: 0;
+                    font-size: 35px;
+                    font-family: Gotham Narrow Bold;
+                    text-align: left;
+                    padding: 20px 20px 10px 10px;
+                    line-height: 1;
+
+                    span {
+                        font-size: 15px;
+                    }
+
+                    a {
+                        font-size: 15px;
+                    }
+                }
+
                 .quiz {
                     position: absolute;
                     bottom: 0;
-
-                    a {
-                        font-size: 50px;
-                    }
 
                     #quiz-image {
                         width: 90%;

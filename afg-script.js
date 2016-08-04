@@ -118,10 +118,31 @@ Tweens -->
 
     //article title
     var line = CSSRulePlugin.getRule("#top-text:before");
-    var tween = TweenMax.from(line, .5, {cssRule:{width:"60%"}});
+    // var tween = TweenMax.from(line, .5, {cssRule:{width:"60%"}});
+    var tween = TweenMax.to(line, 1, {cssRule:{x:"+=50"}, visibility:"hidden"});
 
     var Scene = new ScrollMagic.Scene({
         triggerElement: "#top-text"
+    })
+    .setTween(tween)
+    .addTo(controller);
+
+    //text-box2 before
+    var line = CSSRulePlugin.getRule("#text-box2 p:before");
+    var tween = TweenMax.from(line, 2, {cssRule:{bottom:"50%"}});
+
+    var Scene = new ScrollMagic.Scene({
+        triggerElement: "#text-box2"
+    })
+    .setTween(tween)
+    .addTo(controller);
+
+    //text-box2 after
+    var line = CSSRulePlugin.getRule("#text-box2 p:after");
+    var tween = TweenMax.from(line, 2, {cssRule:{top:"20%"}});
+
+    var Scene = new ScrollMagic.Scene({
+        triggerElement: "#text-box2"
     })
     .setTween(tween)
     .addTo(controller);

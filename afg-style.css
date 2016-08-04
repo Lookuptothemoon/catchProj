@@ -144,11 +144,22 @@ body {
         background-repeat: no-repeat;
         margin: 0 auto;
         position: relative; }
+        body .all-content .content .quiz-content .quiz-link {
+          background-color: white;
+          position: absolute;
+          right: 0;
+          font-size: 35px;
+          font-family: Gotham Narrow Bold;
+          text-align: left;
+          padding: 20px 20px 10px 10px;
+          line-height: 1; }
+          body .all-content .content .quiz-content .quiz-link span {
+            font-size: 15px; }
+          body .all-content .content .quiz-content .quiz-link a {
+            font-size: 15px; }
         body .all-content .content .quiz-content .quiz {
           position: absolute;
           bottom: 0; }
-          body .all-content .content .quiz-content .quiz a {
-            font-size: 50px; }
           body .all-content .content .quiz-content .quiz #quiz-image {
             width: 90%; }
     body .all-content .bottom {
